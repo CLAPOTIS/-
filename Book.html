@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>电子阅览室管理系统—book—搜索分类排行</title>
+        <link type="text/css" rel="stylesheet" href="css/search.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav_center">
+                <ul class="nav_ul_1">
+                    <li><a href="Book.html">Book</a></li>
+                    <li><a href="Video.html">Video</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                </ul>
+                <img src="images/biaoti.png" alt="biaoti" class="nav_logo">    
+                <ul  class="nav_ul_2">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="login.html">注册|已有账号？</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <div class="all">
+            <div class="search_frames">
+                <h3 class="search_title">
+                    <span class="left_line"></span>
+                    书目检索
+                    <span class="right_line"></span>
+                </h3>
+                <form action="queryServlet" method="post" class="search_form">  
+                    <select name="type" class="search_form_select">
+                        <option value="bname">按书名</option>
+                        <option value="bwriter">按作者</option>
+                        <option value="bprop">按类型</option>
+                    </select>
+                    <input type = "text" name = "book" size="50" class="search_frames_input">
+                    <input type = "submit" name="g" value = "检索" class="btn1 search_frames_button">
+                    <img class="search_img" src="images/search_2.png" alt="search">
+                </form>
+            </div> 
+            <!--分类部分开始-->
+            <h2 class="type_h2">
+                <span class="left_line"></span> 
+                <img src="images/search/fl_img_b.png" alt="a classify icon" class="type_h2_img">
+                 分类浏览
+                 <span class="right_line"></span>
+            </h2>
+            <!--第一行分类-->
+            <ul class="classify_img">
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_1.png" alt="励志向上">
+                    <a class="classify_a" href="classifyServlet?Btype=励志向上&type=b">励志向上</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_2.png" alt="科幻悬疑">
+                    <a class="classify_a" href="classifyServlet?Btype=科幻悬疑&type=b">科幻悬疑</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_3.png" alt="网游动漫">
+                    <a class="classify_a" href="classifyServlet?Btype=网游动漫&type=b">网游动漫</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_4.png" alt="青春文学">
+                    <a class="classify_a" href="classifyServlet?Btype=青春文学&type=b">青春文学</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_5.png" alt="温暖治愈">
+                    <a class="classify_a" href="classifyServlet?Btype=温暖治愈&type=b">温暖治愈</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_6.png" alt="武侠修真">
+                    <a class="classify_a" href="classifyServlet?Btype=武侠修真&type=b">武侠修真</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_7.png" alt="经典名著">
+                    <a class="classify_a" href="classifyServlet?Btype=经典名著&type=b">经典名著</a>
+                </li>
+                <li>
+                    <img class="classify_image" src="images/search/book_classify_icon_8.png" alt="其他类型">
+                    <a class="classify_a" href="classifyServlet?Btype=其他类型&type=b">其他类型</a>
+                </li>
+            </ul>
+            <!--分类部分结束-->  
+
+            <!--排行榜部分开始-->  
+            <aside>
+                <h2 class="ranking_h2">
+                    <span class="left_line"></span>
+                    <img src="images/search/phb_img_b.png" alt="a ranking icon" class="type_h2_img"> 
+                    排行榜        
+                    <span class="right_line"></span>
+                </h2>
+                <ul class="ranking">
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_1.png" alt="a ranking icon">热搜榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_2.png" alt="a ranking icon">阅读榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_3.png" alt="a ranking icon">新书榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_4.png" alt="a ranking icon">收藏榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_5.png" alt="a ranking icon">下载榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_6.png" alt="a ranking icon">评分榜
+                    </li>     
+                </ul>
+            </aside>
+            <!--排行榜第一行-->
+            <ul class="ranking_up">
+                <li class="ranking_up_li">
+                    <h2>热搜榜</h2>
+                    <ul class="ranking_hot">
+                        <li>平凡的世界</li>
+                        <li>寻找时间的人</li>
+                        <li>微微一笑很倾城</li>
+                        <li>人性的弱点</li>
+                        <li>摆渡人</li>
+                        <li>巴拉巴拉小魔仙</li>     
+                        <li>人性的弱点</li>
+                        <li>摆渡人</li>
+                        <li>巴拉巴拉小魔仙</li>  
+                        <li>巴拉巴拉小魔仙</li>  
+                    </ul>
+                </li>
+                <li class="ranking_up_li">
+                    <h2>阅读榜</h2>
+                    <ul class="ranking_hot">
+                        <li>平凡的世界</li>
+                        <li>寻找时间的人</li>
+                        <li>微微一笑很倾城</li>
+                        <li>人性的弱点</li>
+                        <li>摆渡人</li>
+                        <li>巴拉巴拉小魔仙</li>     
+                        <li>人性的弱点</li>
+                        <li>摆渡人</li>
+                        <li>巴拉巴拉小魔仙</li>  
+                        <li>巴拉巴拉小魔仙</li>  
+                    </ul>
+                </li>
+                <li class="ranking_up_li">
+                    <h2>新书榜</h2>
+                    <ul class="ranking_hot">
+                        <li>平凡的世界</li>
+                        <li>寻找时间的人</li>
+                        <li>微微一笑很倾城</li>
+                        <li>人性的弱点</li>
+                        <li>摆渡人</li>
+                        <li>巴拉巴拉小魔仙</li>     
+                        <li>人性的弱点</li>
+                        <li>摆渡人</li>
+                        <li>巴拉巴拉小魔仙</li>  
+                        <li>巴拉巴拉小魔仙</li>  
+                    </ul>
+                </li>     
+            </ul>
+            
+            <!--排行榜部分结束-->  
+
+        </div>
+    </body>
+</html>

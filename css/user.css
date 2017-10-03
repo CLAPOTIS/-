@@ -1,0 +1,156 @@
+body {
+	font-size:small;
+	font-family:Verdana,Geneva,Arial,sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+}
+.all{
+	position:relative;
+	width:100%;
+	margin:0 auto;
+}
+a{
+	color:black;
+	text-decoration:none !important;
+}
+a:hover{
+	color:#954b4b;
+}
+.grzx_img{
+	width:100%;
+}
+/*用户头像*/
+.avatar{
+	position:absolute;
+	/* top:255px;
+	left:200px; */
+	top:60%;
+	left:15%;
+	width:110px;
+	height:110px;
+	border-radius:50%;
+}
+/*用户个人资料样式*/
+aside{
+	float:left;
+	/* width:410px; */
+	width:30%;
+	margin:55px 50px;
+	text-align:center;
+}
+aside h3{
+	height:20px;
+}
+aside p{
+	position:relative;
+	height:20px;
+}
+.update_user{
+	position:absolute;
+	top:50px;
+	left:35%;
+	transform:translateY(-50%);
+}
+.update_btn{
+	position:absolute;
+	top:50px;
+	left:55%;
+	transform:translate(-50%,-50%);
+}
+/*导航条样式*/
+nav{
+	margin:0 auto;
+	position:relative;
+	width:55%;
+	top:20px;
+	margin-left:45%;	
+	/* margin:0px 50px 55px 510px ; */
+	/* border-bottom:1px solid #e7e7e7; */
+}
+.nav_ul{
+	/* position:absolute;
+	top:50%;
+	left:80px;
+	width:auto;
+	list-style-type:none;
+	transform:translateY(-50%); */
+	margin:0 auto;
+	height:50px;
+	font:110%;
+	font-weight:bold;
+	margin:0 auto;
+	list-style-type:none;
+	padding:0px;
+}
+nav ul li{
+	float:left;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	margin-right:calc(30% / 4);
+	padding:1%;
+}
+nav ul li:hover{
+	background-color:#e8e8e8;
+}
+
+nav ul li a{
+	color:#3c3c3c;
+	text-decoration:none !important;
+}
+
+/*我的收藏*/
+ul.collect_img{
+	margin:0px 50px 0px 41%;
+	list-style-type:none;
+	padding:0px;
+	width:55%;
+	height:auto;
+}
+.collect_img_li{
+	position:relative;
+	float:left;
+	width:20%;
+	margin-top:50px;
+	margin-right:calc(20%/3);
+	height:150px;
+}
+.collect_img_li:nth-child(4n){
+	margin-right:0;
+}
+.collect_img_li img{
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.collect_img_li a{
+	position:absolute;
+	top:140px;
+	left:50%;
+	height:14px;
+	width:150px;
+	font-size:16px;
+	text-align:center;
+	transform:translateX(-50%);
+}
+
+/*我的评论*/
+.comment_table{
+	margin:0 auto;
+	position:relative;
+	width:55%;
+	top:20px;
+	margin-left:40%;
+	/* display:block !important; */
+	border-collapse:collapse;
+}
+.comment_table tr,th{
+	width:33%;
+	height:30px;
+	padding:10px;
+	white-space:nowrap;
+	text-align: center;
+}

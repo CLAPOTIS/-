@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>电子阅览室管理系统</title>
+
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <nav>
+           <div class="nav_center">
+                <ul class="nav_ul_1">
+                    <li><a href="Book.html">Book</a></li>
+                    <li><a href="Video.html">Video</a></li>
+                    <li><a href="Music.html">Music</a></li>
+                </ul>
+                <img src="images/biaoti.png" alt="biaoti" class="nav_logo">    
+                <ul  class="nav_ul_2">
+                    <li><a href="index.html">主页</a></li>
+                    <li>
+                        <a href="user.html"> 
+                            <img src="images/user/avatar.png" alt="avatar" class="dlcg_logo">嘻嘻
+                            </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  		
+        <div class="all">            
+            <!--滚动条部分开始-->
+            <div class="frame">
+                <div id="photos" class="play">
+                    <img src="images/frame/frame-photo-1.png" alt="img_1 of frame" class="img_photos">
+                    <img src="images/frame/frame-photo-2.png" alt="img_2 of frame" class="img_photos">
+                    <img src="images/frame/frame-photo-3.png" alt="img_3 of frame" class="img_photos">
+                    <img src="images/frame/frame-photo-4.png" alt="img_4 of frame" class="img_photos">
+                    <!--图片简介-->
+                    <ul class="dis">
+                        <li>走进别人的世界<br>探寻自己的宇宙</li>
+                        <li>每一个生命都有灵魂<br>只是怎样唤醒他们</li>
+                        <li>如果你不出去走走<br>你就会以为这就是世界</li>
+                        <li>中伤不是你的强项<br>黑夜看不见你的坚强</li>
+                    </ul>
+                </div>
+            </div>
+          <!--滚动条部分结束-->
+
+            <!--图标部分开始-->
+            <ul class="logo">
+                <li>
+                    <a href="Book.html"><img src="images/icons/icons_img_11.png" alt="book" class="logo_img"></a>
+                   	<h3  class="logo_title"><a href="Book.html">Book</a></h3>
+                    <p class="logo_introduce">没有哪本书坏到一无是处的地步</p>
+                </li>
+                <li>
+                    <a href="Video.html"><img src="images/icons/icons_img_22.png" alt="video" class="logo_img"></a>
+                    <h3  class="logo_title"><a href="Video.html">Video</a></h3>
+                    <p class="logo_introduce">总有一部电影感动你</p>
+                </li>
+                <li>
+                    <a href="Music.html"><img src="images/icons/icons_img_33.png" alt="music" class="logo_img"></a>
+                    <h3  class="logo_title"><a href="Music.html">Music</a></h3>
+                    <p class="logo_introduce">有多少人喜欢一首歌只是为了那一句婉转的曲调</p>
+                </li>
+            </ul>
+          <!--图标部分结束-->
+
+          <!--热门书籍部分开始-->
+            <!--热门书籍部分标题-->
+            <h2>热门书籍</h2>
+             <!--热门书籍图片部分开始-->
+            <ul class="book">
+                <li>
+                    <img class="book_img" src="images/book/book_img_1.png" alt="book1">
+                    <h3 class="book_title"><a href="detailServlet?Bno=b024&type=b">平凡的世界</a></h3>
+                    <p class="book_introduce">路遥</p>
+                </li>
+                <li>
+                    <img class="book_img" src="images/book/book_img_2.png" alt="book2">
+                    <h3  class="book_title"><a href="detailServlet?Bno=b002&type=b">寻找时间的人</a></h3>
+                    <p class="book_introduce">凯特.汤姆森</p>
+                </li>
+                <li>
+                    <img class="book_img" src="images/book/book_img_3.png" alt="book3">
+                    <h3  class="book_title"><a href="detailServlet?Bno=b011&type=b">微微一笑很倾城</a></h3>
+                    <p class="book_introduce">顾漫</p>
+                </li>
+                <li>
+                    <img class="book_img" src="images/book/book_img_4.png" alt="book4">
+                    <h3  class="book_title"><a href="detailServlet?Bno=b004&type=b">人性的弱点</a></h3>
+                    <p class="book_introduce">戴尔.卡耐基</p>
+                </li>
+                <li>
+                    <img class="book_img" src="images/book/book_img_5.png" alt="book5">
+                    <h3  class="book_title"><a href="detailServlet?Bno=b015&type=b">摆渡人</a></h3>
+                    <p class="book_introduce">克莱儿.麦克福尔</p>
+                </li>
+            </ul>
+            <!--热门书籍部分结束-->
+
+
+          <!--热门视频部分开始-->
+            <!--热门视频标题开始-->
+            <h2>热门视频 </h2> 
+            <!--热门视频图片+文字部分开始-->
+               <!--热门视频：第一行-->
+            <ul class="video_writingPart">
+                <li>
+                    <img class="video_writingPart_img" src="images/video/video_img_1.png" alt="The hottest video"> 
+                    <article class="video_writingPart_article">
+                        <h3 class="video_writingPart_title">
+                            <a href="detailServlet?Vno=v001&type=v">老炮儿</a>
+                        </h3>
+                        <img src="images/video/logo1.png" alt="logo1">
+                        <span class="video_writingPart_introduce1">
+                            <a>冯小刚 吴亦凡 李易峰</a>
+                        </span>
+                        <img src="images/video/logo2.png" alt="logo2">
+                        <p class="video_writingPart_introduce2">英雄迟暮，老炮不老</p>
+                    </article>
+                </li>
+                <li>
+                    <img class="video_writingPart_img" src="images/video/video_img_2.png" alt="The hottest video"> 
+                    <article class="video_writingPart_article">
+                        <h3 class="video_writingPart_title">
+                            <a href="detailServlet?Vno=v002&type=v">摔跤吧！爸爸</a>
+                        </h3>
+                        <img src="images/video/logo1.png" alt="logo1">
+                        <span class="video_writingPart_introduce1">
+                            <a>阿米尔·汗  法缇玛·萨那·纱卡</a>
+                        </span>
+                        <img src="images/video/logo2.png" alt="logo2">
+                        <p class="video_writingPart_introduce2">为圆摔跤梦 女儿不心疼</p>
+                    </article>
+                </li>
+            </ul>
+               <!--热门视频：第二行-->
+            <ul class="video_writingPart">
+                <li>
+                    <img class="video_writingPart_img" src="images/video/video_img_3.png" alt="The hottest video"> 
+                    <article class="video_writingPart_article">
+                        <h3 class="video_writingPart_title">
+                            <a href="detailServlet?Vno=v003&type=v">美女与野兽</a>
+                        </h3>
+                        <img src="images/video/logo1.png" alt="logo1">
+                        <span class="video_writingPart_introduce1">
+                            <a>艾玛·沃森  丹·史蒂文斯</a>
+                        </span>
+                        <img src="images/video/logo2.png" alt="logo2">
+                        <p class="video_writingPart_introduce2">浪漫经典重现 真爱无惧魔咒</p>
+                    </article>
+                </li>
+                <li>
+                    <img class="video_writingPart_img" src="images/video/video_img_4.png" alt="The hottest video"> 
+                    <article class="video_writingPart_article">
+                        <h3 class="video_writingPart_title">
+                            <a href="detailServlet?Vno=v004&type=v">速度与激情8</a>
+                        </h3>
+                        <img src="images/video/logo1.png" alt="logo1">
+                        <span class="video_writingPart_introduce1">
+                            <a>范·迪塞尔 杰森·斯坦森</a>
+                        </span>
+                        <img src="images/video/logo2.png" alt="logo2">
+                        <p class="video_writingPart_introduce2">车王要黑化 家族被击垮</p>
+                    </article>
+                </li>
+            </ul>
+               <!--热门视频：第三行-->
+            <ul class="video_writingPart">
+                <li  class="last_li">
+                    <img class="video_writingPart_img" src="images/video/video_img_5.png" alt="The hottest video"> 
+                    <article class="video_writingPart_article">
+                        <h3 class="video_writingPart_title">
+                            <a href="detailServlet?Vno=v005&type=v">从你的全世界路过</a>
+                        </h3>
+                        <img src="images/video/logo1.png" alt="logo1">
+                        <span class="video_writingPart_introduce1">
+                            <a>邓超 张天爱 杨洋</a>
+                        </span>
+                        <img src="images/video/logo2.png" alt="logo2">
+                        <p class="video_writingPart_introduce2">白百何变迷妹 追爱小鲜肉</p>
+                    </article>
+                </li>
+                <li  class="last_li">
+                    <img class="video_writingPart_img" src="images/video/video_img_6.png" alt="The hottest video"> 
+                    <article class="video_writingPart_article">
+                        <h3 class="video_writingPart_title">
+                            <a href="detailServlet?Vno=v006&type=v">后会无期</a>
+                        </h3>
+                        <img src="images/video/logo1.png" alt="logo1">
+                        <span class="video_writingPart_introduce1">
+                            <a>冯绍峰 陈柏霖 王珞丹</a>
+                        </span>
+                        <img src="images/video/logo2.png" alt="logo2">
+                        <p class="video_writingPart_introduce2">看暖男韩寒如何用段子对抗悲剧</p>
+                    </article>
+                </li>
+            </ul>
+            <!--热门视频图片+文字部分结束-->
+
+
+            <!--热门音乐部分开始-->
+            <!--热门音乐标题开始-->
+            <h2>热门音乐</h2> 
+            <!--热门音乐图片+文字部分开始-->
+               <!--热门音乐视频：第一行-->
+            <ul class="music_writingPart">
+                <li>
+                    <img class="video_writingPart_img" src="images/music/music_img_1.png" alt="The hottest music"> 
+                    <article class="music_writingPart_article">
+                        <h3 class="music_writingPart_title">
+                            <a href="detailServlet?Mno=m007&type=m">小幸运</a>
+                        </h3>
+                        <img src="images/music/logo1.png" alt="logo1">
+                        <span class="music_writingPart_introduce1">
+                            <a>田馥甄</a>
+                        </span>
+                        <img src="images/music/logo2.png" alt="logo2">
+                        <p class="music_writingPart_introduce2">原来你是我最想留住的幸运 原来我们和爱情曾经靠得那么近</p>
+                    </article>
+                </li>
+                <li>
+                    <img class="music_writingPart_img" src="images/music/music_img_2.png" alt="The hottest music"> 
+                    <article class="music_writingPart_article">
+                        <h3 class="music_writingPart_title">
+                            <a href="detailServlet?Mno=m004&type=m">刚好遇见你</a>
+                        </h3>
+                        <img src="images/music/logo1.png" alt="logo1">
+                        <span class="music_writingPart_introduce1">
+                            <a>李玉刚</a>
+                        </span>
+                        <img src="images/music/logo2.png" alt="logo2">
+                        <p class="music_writingPart_introduce2">因为我刚好遇见你 留下足迹才美丽 风吹花落泪如雨 因为不想分离</p>
+                    </article>
+                </li>
+            </ul>
+               <!--热门音乐：第二行-->
+            <ul class="music_writingPart">
+                <li>
+                    <img class="video_writingPart_img" src="images/music/music_img_3.png" alt="The hottest music"> 
+                    <article class="music_writingPart_article">
+                        <h3 class="music_writingPart_title">
+                            <a href="detailServlet?Mno=m003&type=m">好久不见</a>
+                        </h3>
+                        <img src="images/music/logo1.png" alt="logo1">
+                        <span class="music_writingPart_introduce1">
+                            <a>陈奕迅</a>
+                        </span>
+                        <img src="images/music/logo2.png" alt="logo2">
+                        <p class="music_writingPart_introduce2">你会不会忽然的出现 在街角的咖啡店</p>
+                    </article>
+                </li>
+                <li>
+                    <img class="music_writingPart_img" src="images/music/music_img_4.png" alt="The hottest music"> 
+                    <article class="music_writingPart_article">
+                        <h3 class="music_writingPart_title">
+                            <a href="detailServlet?Mno=m009&type=m">阴天</a>
+                        </h3>
+                        <img src="images/music/logo1.png" alt="logo1">
+                        <span class="music_writingPart_introduce1">
+                            <a>莫文蔚</a>
+                        </span>
+                        <img src="images/music/logo2.png" alt="logo2">
+                        <p class="music_writingPart_introduce2">总之那几年 你们两个没有缘</p>
+                    </article>
+                </li>
+            </ul>
+               <!--热门音乐：第三行-->
+            <ul class="music_writingPart">
+                <li class="last_li">
+                    <img class="video_writingPart_img" src="images/music/music_img_5.png" alt="The hottest music"> 
+                    <article class="music_writingPart_article">
+                        <h3 class="music_writingPart_title">
+                            <a href="detailServlet?Mno=m018&type=m">Valder Fields</a>
+                        </h3>
+                        <img src="images/music/logo1.png" alt="logo1">
+                        <span class="music_writingPart_introduce1">
+                            <a>Tomas Wells</a>
+                        </span>
+                        <img src="images/music/logo2.png" alt="logo2">
+                        <p class="music_writingPart_introduce2">I was found on the ground by the fountain about a fields of a summer stride</p>
+                    </article>
+                </li>
+                <li  class="last_li">
+                    <img class="music_writingPart_img" src="images/music/music_img_6.png" alt="The hottest music"> 
+                    <article class="music_writingPart_article">
+                        <h3 class="music_writingPart_title">
+                            <a href="detailServlet?Mno=m014&type=m">喜帖街</a>
+                        </h3>
+                        <img src="images/music/logo1.png" alt="logo1">
+                        <span class="music_writingPart_introduce1">
+                            <a>谢安琪</a>
+                        </span>
+                        <img src="images/music/logo2.png" alt="logo2">
+                        <p class="music_writingPart_introduce2">忘掉爱过他 当初的喜帖金箔印着那位他 裱起婚纱照那道墙 及一切美丽旧年华 明日同步拆下</p>
+                    </article>
+                </li>
+            </ul>
+            <!--热门音乐图片+文字部分结束-->
+            <h2>公告</h2>
+            <footer>
+            	<jsp:include page="showNotice.jsp"/>
+                <ul class="footer_ul">
+                    <li><img class="footer_img" src="images/dh_img.png" alt="tel"><span class="footer_span">15927254797</span></li>
+                    <li><img class="footer_img" src="images/dd_img.png" alt="address"><span class="footer_span">中南民族大学16栋103室</span></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

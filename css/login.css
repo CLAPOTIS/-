@@ -1,0 +1,144 @@
+body {
+	background:url(../images/register.jpg) no-repeat;
+	background-size:cover;
+	font-size:small;
+	font-family:Verdana,Geneva,Arial,sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+}
+/*凝胶布局：主体定宽水平居中*/
+.all{
+	width:100%;
+	margin:0 auto;
+}
+.home{
+	float:right;
+}
+/*背景图层开始*/
+.bgDiv{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color:black;
+	width:880px;
+	height:350px;
+	opacity:0.7;
+}
+.bgDiv ul{
+	list-style-type:none;
+	width:880px;
+    height:350px;
+	padding:0px;
+}
+.bgDiv_ul_left{
+	position:absolute;
+	top:50%;
+	left:25%;
+	transform:translate(-50%,-50%);
+	color:white;
+	text-align:center;
+	width:300px;
+	margin:0px;
+}
+.bgDiv_ul_right{
+	position:absolute;
+	top:50%;
+	left:75%;
+	transform:translate(-50%,-50%);
+	color:white;
+	text-align:center;
+	width:300px;
+	margin:0px;
+}
+.bgDiv_ul_left p,.bgDiv_ul_right p{
+	margin:10px 0px 0px 0px;
+}
+.button1{
+	border-radius:3px;
+	width:100px;
+	height:30px;
+	border:white;
+	cursor:pointer;
+	transition:all .5s;
+	-webkit-transition:all .5s;
+	box-shadow:1px 2px 5px #000;
+}
+.button1:hover{
+	box-shadow:2px 4px 10px #000;
+}
+/*背景图层结束*/
+.login_form{
+	display:none;
+}
+#register{
+	position:absolute;
+	top:50%;
+	left:25%;
+	width:400px;
+	height:400px;
+	transform:translate(-50%,-50%);
+	background-color:white;
+	display:block;
+}
+#register form{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:300px;
+	height:300px;
+	transform:translate(-50%,-50%);
+}
+.select{
+	position:relative;
+	top:30px;
+	left:0px;
+	margin-bottom:20px;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border-radius:3px;
+}
+#register h1,#login h1{
+	color:#954b4b;
+	font-family:'Microsoft YaHei',SimHei;
+}
+.inputing{
+	width:230px;
+	height:30px;
+	margin:0px;
+	border:none;
+	border-bottom:1px solid #954b4b;
+	outline:none;
+}
+.icons{
+		margin-top:25px;
+}
+.button2{
+	float:right;
+	border-radius:2px;
+	width:100px;
+	height:30px;
+	margin:30px;
+	font-weight:700;
+	background-color:#954b4b;
+	border-color:#954b4b;
+	color:#fff;
+	outline:none;
+	border-radius:3px;
+	cursor:pointer;
+	transition:all .5s;
+	-webkit-transition:all .5s;
+	box-shadow:1px 2px 5px #000;
+}
+.button2:hover{
+	box-shadow:2px 4px 10px #000;
+}
+.backNews{
+	position:absolute;
+	top:100%;
+	left:0;
+}

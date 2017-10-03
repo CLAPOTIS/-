@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>电子阅览室管理系统—管理员中心</title>
+        <link type="text/css" rel="stylesheet" href="css/admin.css">
+    </head>
+    <body>
+        <div class="all"> 
+            <!--搜索框部分-->
+            <img src="images/admin/glyzx.jpg" alt="admin" class="glyzx_img">
+            <form method="get" action="Admin_searchServlet">
+                <fieldset class="search">
+                    <input type="text" class="box" name="content">
+                    <button class="btn" title="SEARCH"> </button>
+                </fieldset>
+            </form>
+            <!--aside附加导航部分-->
+            <aside>
+                <div class="aside_title">
+                    <img src="images/admin/glytx.png" alt="admin" class="glytx_img">
+                    <h3>张西西</h3>
+                </div>
+                <nav class="aside_nav">
+                    <li>
+                        <img src="images/admin/gl_book.png" alt="书籍管理logo">
+                        <span><a href="Admin_operationServlet?type=b">书籍管理</a></span>
+                    </li>
+                    <li>
+                        <img src="images/admin/gl_movie.png" alt="视频管理logo">
+                        <span><a href="Admin_operationServlet?type=v">视频管理</a></span>
+                    </li>
+                    <li>
+                        <img src="images/admin/gl_music.png" alt="音乐管理logo">
+                        <span><a href="Admin_operationServlet?type=m">音乐管理</a></span>
+                    </li>
+                    <li>
+                        <img src="images/admin/gl_notice.png" alt="公告信息管理logo">
+                        <span><a href="Admin_operationServlet?type=n">公告信息管理</a></span>
+                    </li>
+                    <li>
+                        <img src="images/admin/gl_user.png" alt="用户信息管理logo">
+                        <span><a href="Admin_operationServlet?type=u">用户信息管理</a></span>
+                    </li>
+                    <li>
+                        <img src="images/admin/gl_comment.png" alt="评论管理logo">
+                        <span><a href="Admin_operationServlet?type=c">评论管理</a></span>
+                    </li>
+                </nav>        
+            </aside>
+    	</div>
+    </body>
+</html>

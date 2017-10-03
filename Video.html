@@ -1,0 +1,172 @@
+	<%@ page contentType="text/html;charset=utf-8" %>
+	<!DOCTYPE html>
+	<html>
+	    <head>
+	        <meta charset="utf-8">
+	        <title>电子阅览室管理系统—video—搜索分类排行</title>
+	        <link type="text/css" rel="stylesheet" href="css/search.css">
+	    </head>
+	    <body>
+	        <nav>
+	            <div class="nav_center">
+	                <ul class="nav_ul_1">
+	                    <li><a href="Book.html">Book</a></li>
+	                    <li><a href="Video.html">Video</a></li>
+	                    <li><a href="Music.html">Music</a></li>
+	                </ul>
+	                <img src="images/biaoti.png" alt="biaoti" class="nav_logo">    
+	                <ul  class="nav_ul_2">
+	                  	<li><a href="index.html">主页</a></li>
+						<li>
+							<a href="user.html"> 
+	 							<img src="images/user/avatar.png" alt="avatar" class="dlcg_logo">嘻嘻
+	 						</a>
+	 					</li>
+					</ul>
+	            </div>
+        	</nav>  
+	        <div class="all">
+	            <div class="search_frames">
+	                <h3 class="search_title">
+	                    <span class="left_line"></span>
+	                    视频检索
+	                    <span class="right_line"></span>
+	                </h3>
+	                <form action="videoServlet" method="post" class="search_form">  
+	                    <select name="type" class="search_form_select">
+	                        <option value="vname">按名称</option>
+	                        <option value="vactor">按演员</option>
+	                        <option value="vprop">按类型</option>
+	                    </select>
+	                    <input type = "text" name = "video" size="50" class="search_frames_input">
+	                    <input type = "submit" name="g" value = "检索" class="btn1 search_frames_button">
+	                    <img class="search_img" src="images/search_2.png" alt="search">
+	                </form>
+	            </div>
+	            <!--分类部分开始-->
+	            <h2 class="type_h2">
+	                <span class="left_line"></span> 
+	                <img src="images/search/fl_img_v.png" alt="a classify icon" class="type_h2_img">
+	                 分类浏览
+	                 <span class="right_line"></span>
+            	</h2>
+	            <!--第一行分类-->
+	            <ul class="classify_img">
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_1.png" alt="热门电影">
+						<a class="classify_a" href="classifyServlet?Vtype=热门电影&type=v">热门电影</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_2.png" alt="电视剧场">
+	                    <a class="classify_a" href="classifyServlet?Vtype=电视剧场&type=v">电视剧场</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_3.png" alt="综艺节目">
+	                    <a class="classify_a" href="classifyServlet?Vtype=综艺节目&type=v">综艺节目</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_4.png" alt="卡通动漫">
+	                    <a class="classify_a" href="classifyServlet?Vtype=卡通动漫&type=v">卡通动漫</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_5.png" alt="幽默搞笑">
+	                    <a class="classify_a" href="classifyServlet?Vtype=幽默搞笑&type=v">幽默搞笑</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_6.png" alt="相声小品">
+	                    <a class="classify_a" href="classifyServlet?Vtype=相声小品&type=v">相声小品</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_7.png" alt="音乐舞蹈 ">
+	                    <a class="classify_a" href="classifyServlet?Vtype=音乐舞蹈&type=v">音乐舞蹈</a>
+	                </li>
+	                <li>
+	                    <img class="classify_image" src="images/search/video_classify_icon_8.png" alt="其它类型">
+	                    <a class="classify_a" href="classifyServlet?Vtype=其它类型&type=v">其它类型</a>
+	                </li>
+	            </ul>
+	            <!--分类部分结束-->  
+	
+	            <!--排行榜部分开始-->  
+	            <aside>
+	                <h2 class="ranking_h2">
+	                    <span class="left_line"></span>
+	                    <img src="images/search/phb_img_b.png" alt="a ranking icon" class="type_h2_img"> 
+	                    排行榜        
+	                    <span class="right_line"></span>
+                	</h2>
+	                <ul class="ranking">
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_1.png" alt="a ranking icon">热搜榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_2.png" alt="a ranking icon">阅读榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_3.png" alt="a ranking icon">新书榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_4.png" alt="a ranking icon">收藏榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_5.png" alt="a ranking icon">下载榜
+                    </li>
+                    <li>
+                        <img class="ranking_img" src="images/search/phb_img_6.png" alt="a ranking icon">评分榜
+                    </li>     
+                </ul>
+	            </aside>
+	            <!--排行榜第一行-->
+	            <ul class="ranking_up">
+	                <li class="ranking_up_li">
+	                    <h2>热搜榜</h2>
+	                    <ul class="ranking_hot">
+	                        <li>平凡的世界</li>
+	                        <li>寻找时间的人</li>
+	                        <li>微微一笑很倾城</li>
+	                        <li>人性的弱点</li>
+	                        <li>摆渡人</li>
+	                        <li>巴拉巴拉小魔仙</li>     
+	                        <li>人性的弱点</li>
+	                        <li>摆渡人</li>
+	                        <li>巴拉巴拉小魔仙</li>  
+	                        <li>巴拉巴拉小魔仙</li>  
+	                    </ul>
+	                </li>
+	                <li class="ranking_up_li">
+	                    <h2>风云榜</h2>
+	                    <ul class="ranking_hot">
+	                        <li>平凡的世界</li>
+	                        <li>寻找时间的人</li>
+	                        <li>微微一笑很倾城</li>
+	                        <li>人性的弱点</li>
+	                        <li>摆渡人</li>
+	                        <li>巴拉巴拉小魔仙</li>     
+	                        <li>人性的弱点</li>
+	                        <li>摆渡人</li>
+	                        <li>巴拉巴拉小魔仙</li>  
+	                        <li>巴拉巴拉小魔仙</li>  
+	                    </ul>
+	                </li>
+	                <li class="ranking_up_li">
+	                    <h2>新作榜</h2>
+	                    <ul class="ranking_hot">
+	                        <li>平凡的世界</li>
+	                        <li>寻找时间的人</li>
+	                        <li>微微一笑很倾城</li>
+	                        <li>人性的弱点</li>
+	                        <li>摆渡人</li>
+	                        <li>巴拉巴拉小魔仙</li>     
+	                        <li>人性的弱点</li>
+	                        <li>摆渡人</li>
+	                        <li>巴拉巴拉小魔仙</li>  
+	                        <li>巴拉巴拉小魔仙</li>  
+	                    </ul>
+	                </li>     
+	            </ul>
+	            
+	            <!--排行榜部分结束-->  
+	
+	        </div>
+	    </body>
+	</html>
